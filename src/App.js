@@ -101,6 +101,39 @@ const SAMPLE_FLASHCARDS = [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
 },
+{
+  id: 5,
+  name: `Marble Rye`,
+  description: `This is a classic New York Style Deli rye bread.`,
+  ingredient: `High Gluten Wheat
+  Whole Rye Flour from Janie’s Mill
+  Water
+  Molasses
+  Cocoa Noir
+  Carraway
+  Salt
+  
+  `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
+{
+  id: 6,
+  name: `Baguette`,
+  description: `This is the classic French bread. This bread offers a crispy crust with a soft pillowy interior.`,
+  ingredient: `Sifted Wheat
+  Whole Wheat
+  Rye
+  Water
+  Salt
+  Yeast
+  `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
+
 ]
 
 export default App;
