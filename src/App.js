@@ -133,6 +133,57 @@ const SAMPLE_FLASHCARDS = [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
 },
+{
+  id: 7,
+  name: `Seeded Janie’s Bread`,
+  description: `This bread is our Local Whole Wheat with the addition of seeds. It’s rich, earthy, and offers a variety of textures.`,
+  ingredient: `Transitional Whole Wheat from The Mill at Janie’s Farm
+  Water
+  Salt
+  Flax
+  Millet
+  Pumpkin Seed
+  Sunflower Seed
+  Sesame Seed
+  `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
+{
+  id: 8,
+  name: `Cheesy Bread`,
+  description: `This focaccia dough is baked with a sharp white cheddar cheese and topped with breadcrumbs.`,
+  ingredient: `High Gluten Wheat
+  Water
+  Sugar
+  Salt
+  Yeast
+  White Cheddar
+  Breadcrumbs
+  Olive oil
+  `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
+{
+  id: 9,
+  name: `Pizza Rossa`,
+  description: `This focaccia dough has a spicy salty tomato topping.`,
+  ingredient: `High Gluten Wheat
+  Water
+  Sugar
+  Salt
+  Yeast
+  Crushed tomatoes
+  Maldon sea salt
+  Chili oil
+  `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
 
 ]
 
