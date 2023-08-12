@@ -70,3 +70,13 @@ body {
 .flashcard-option:first-child {
   margin-top: 0;
 }
+
+select {
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: rgba(6, 74, 126, 0.838);
+  border-color: ghostwhite;
+  color:ghostwhite;
+  font-size: larger;
+  font-family: 'Tahoma', sans-serif;
+}

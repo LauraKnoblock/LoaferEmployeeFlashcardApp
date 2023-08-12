@@ -1,9 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import FlashcardList from './FlashcardList';
 import axios from 'axios';
+import Flashcard from './Flashcard';
 
 function App() {
-  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
+  const [selectedCategory, setSelectedCategory] = useState('bread');
+  const [flashcards, setFlashcards] = useState([]);
+
+  const categoryFlashcards = {
+    bread: SAMPLE_FLASHCARDS.filter(card => card.category === 'bread'),
+    lunch: SAMPLE_FLASHCARDS.filter(card => card.category === 'lunch'),
+    pizza: SAMPLE_FLASHCARDS.filter(card => card.category === 'pizza'),
+  };
+
+  const handleCategoryChange = (event) => {
+    const newCategory = event.target.value;
+    setSelectedCategory(newCategory);
+    setFlashcards(categoryFlashcards[newCategory]);
+  };
+
 
   // useEffect(() => {
   //   axios
@@ -30,12 +45,19 @@ function App() {
   //   return textArea.value;
   // }
   return (
-   <div>
-    <h1>Union Loafers Menu Knowledge</h1>
-      <div className="container">
-        <FlashcardList flashcards={flashcards}/>
+    <div>
+      <h1>Union Loafers Menu Knowledge</h1>
+      <div>
+        <select value={selectedCategory} onChange={handleCategoryChange}>
+          <option value="bread">Bread</option>
+          <option value="lunch">Lunch</option>
+          <option value="pizza">Pizza</option>
+        </select>
       </div>
-      </div> 
+      <div className="container">
+        <FlashcardList flashcards={flashcards} />
+      </div>
+    </div>
   );
 }
 
@@ -43,6 +65,7 @@ const SAMPLE_FLASHCARDS = [
   {
       id: 1,
       name: `Light & Mild`,
+      category: 'bread',
       description:`This is a very traditional sourdough in the style of rustic French countryside bread`,
       ingredient: `Ingredients
       Transitional Whole Kernel wheat flour from The Mill at Janie’s Farm (for nutrition and flavor),
@@ -57,6 +80,7 @@ const SAMPLE_FLASHCARDS = [
   {
       id: 2,
       name: `Janie's Bread`,
+      category: 'bread',
       description: `This bread is made with a local Whole Wheat that is stone-milled fresh for us in Ashkum, IL`,
       ingredient: `Transitional Whole Kernel wheat flour from The Mill at Janie's Farm (for nutrition and flavor)
       Dark rye flour from Janies 
@@ -71,6 +95,7 @@ const SAMPLE_FLASHCARDS = [
   {
     id: 3,
     name: `Hoagie`,
+    category: 'bread',
     description: `Hoagies are a classic sandwich shop bread. It’s a soft white bread with a tender crumb and mild flavor.`,
     ingredient: `high gluten wheat
     Durum wheat
@@ -88,6 +113,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 4,
   name: `Semolina`,
+  category: 'bread',
   description: `This is our take on a classic Italian table bread. The sesame seeds give the bread a warm nutty flavor, while the oil gives the crumb a silky smooth texture.`,
   ingredient: `Sifted Wheat
   Whole Durum Wheat
@@ -104,6 +130,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 5,
   name: `Marble Rye`,
+  category: 'bread',
   description: `This is a classic New York Style Deli rye bread.`,
   ingredient: `High Gluten Wheat
   Whole Rye Flour from Janie’s Mill
@@ -121,6 +148,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 6,
   name: `Baguette`,
+  category: 'bread',
   description: `This is the classic French bread. This bread offers a crispy crust with a soft pillowy interior.`,
   ingredient: `Sifted Wheat
   Whole Wheat
@@ -136,6 +164,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 7,
   name: `Seeded Janie’s Bread`,
+  category: 'bread',
   description: `This bread is our Local Whole Wheat with the addition of seeds. It’s rich, earthy, and offers a variety of textures.`,
   ingredient: `Transitional Whole Wheat from The Mill at Janie’s Farm
   Water
@@ -153,6 +182,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 8,
   name: `Cheesy Bread`,
+  category: 'bread',
   description: `This focaccia dough is baked with a sharp white cheddar cheese and topped with breadcrumbs.`,
   ingredient: `High Gluten Wheat
   Water
@@ -170,6 +200,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 9,
   name: `Pizza Rossa`,
+  category: 'bread',
   description: `This focaccia dough has a spicy salty tomato topping.`,
   ingredient: `High Gluten Wheat
   Water
@@ -180,6 +211,17 @@ const SAMPLE_FLASHCARDS = [
   Maldon sea salt
   Chili oil
   `,
+  options: [
+      // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
+  ]
+},
+{
+  id: 10,
+  name: `Bistro Beef`,
+  category: 'lunch',
+  description: ``,
+  ingredient: `Hoagie, Bistro sauce, Gruyere cheese, Pickled Peppers, Roast Beef, Maldon sea salt`
+  ,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
