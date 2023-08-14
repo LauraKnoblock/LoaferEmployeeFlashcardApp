@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 101, 150, 0.9);
+  background-color: rgba(0, 100, 150, 0.87);
   color:white;
   margin:0;
   padding: 1rem;
@@ -119,3 +119,6 @@ select {
   margin-top:1rem;
 }
 
+.card .h3 {
+  margin-top: -1rem;
+}
