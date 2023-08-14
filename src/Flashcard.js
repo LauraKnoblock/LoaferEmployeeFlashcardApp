@@ -15,10 +15,10 @@ export default function Flashcard( { flashcard }) {
    }
 
   useEffect(setMaxHeight, [flashcard.name, flashcard.description, flashcard.ingredient, flashcard.image, flashcard.options]);
-  useEffect(() => {
-      window.addEventListener('resize', setMaxHeight)
-      return () => window.removeEventListener('resize', setMaxHeight);
-  }, );
+  // useEffect(() => {
+  //     window.addEventListener('resize', setMaxHeight)
+  //     return () => window.removeEventListener('resize', setMaxHeight);
+  // }, );
   useEffect(() => {
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);

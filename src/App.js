@@ -26,11 +26,11 @@ function App() {
     <div>
       <div className="header">
       <img src="https://images.squarespace-cdn.com/content/v1/59626a54e58c62cb702f966f/1550516597840-RQUDC10WZ33QFTLH6UAZ/Seal_blue.png?format=100w"/>
-      <h1>Union Loafers Menu Knowledge</h1>
+      <h1>Union Loafers Menu Guide</h1>
       </div>
       <div>
         <select value={selectedCategory} onChange={handleCategoryChange}>
-        <option value="none" disabled>Select a category to study</option>
+        <option value="none" disabled>Select a category</option>
           <option value="bread">Bread</option>
           <option value="sandwiches">Sandwiches</option>
           <option value="lunchSoupSalad">Lunch: Soup & Salad</option>
@@ -176,10 +176,155 @@ const SAMPLE_FLASHCARDS = [
   id: 10,
   name: `Bistro Beef`,
   category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p151_i2_w3600.jpeg?width=1280&dpr=1.25',
   description: ``,
-  ingredient: `Hoagie, Bistro sauce, Gruyere cheese, Pickled Peppers, Roast Beef, Maldon sea salt`
+  ingredient: `Hoagie
+  Bistro sauce
+  Gruyere cheese
+  Pickled Peppers
+  Roast Beef
+  Maldon sea salt`
 },
-
+{
+  id: 11,
+  name: `Turkey & Swiss`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p330_i4_w3600.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient: `Light & Mild
+  Famous Sauce
+  Emmenthaler Cheese
+  Whole Leaf Little Gem
+  Roasted Turkey Breast
+  Salt
+  Pepper`
+},
+{
+  id: 12,
+  name: `Ham & Cheddar`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p326_i4_w3600.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient: `Marble Rye
+  Grainy Mustard
+  White Cheddar Cheese
+  Dill Pickles
+  City Ham
+  Butter`
+},
+{
+  id: 13,
+  name: `Smoked Trout Salad`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p420_i1_w3600.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient: `Bianca
+  Basic Mayo
+ Little Gem Leaves
+ (tossed in Lemon Juice, Olive oil, salt, and pepper)
+ Smoked Trout Salad
+ -- Smoked Trout
+ -- Basic Mayo
+ -- Capers
+ -- Fennel
+ -- Shallot
+ -- Bread & Butter Pickle
+ -- Grainy Mustard
+ -- Lemon Juice`
+},
+{
+  id: 14,
+  name: `Roasted Pork`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p177_i4_w3600.jpeg?width=1280&dpr=1.25',
+  description: `Our take on a Cuban Sandwich`,
+  ingredient: `Hoagie
+  Yellow Mustard
+  Garlic Mayo
+  Gruyere Cheese
+  Dill Pickles
+  Roasted Pork
+  Prosciutto`
+},
+{
+  id: 15,
+  name: `Smoked Beet`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p141_i2_w3600.jpeg?width=1280&dpr=1.25',
+  description: `A vegetarian take on a classic Reuben`,
+  ingredient: `Hoagie
+  100k Island Dressing*
+  Smoked Beets
+  Emmenthaler Cheese
+  Sauerkraut`
+},
+{
+  id: 16,
+  name: `Nut Butter`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p221_i3_w1832.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient: `Light & Mild
+  Nut Butter
+  Jelly
+  Salted Whipped Butter`
+},
+{
+  id: 17,
+  name: `Chicken Salad`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p328_i3_w2048.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient: `Bianca
+  Basic Mayo
+  Little Gem Leaves
+  (tossed with Lemon Juice, Olive Oil, Salt, and Pepper)
+  Chicken Salad
+  --Roasted Chicken
+  --Basic Mayo
+  --Shallot
+  --Bread & Butter Pickles
+  --Grainy Mustard
+  --Lemon Juice
+  --Tarragon
+  --Parsley`
+},
+{
+  id: 18,
+  name: `Egg Salad`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p508_i6_w3024.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient:`Oat Porridge
+  Famous Sauce
+  Little Gem Leaves
+  Salt & Pepper
+  Egg Salad
+  --Hard Boiled Eggs
+  --Salt
+  --Celery
+  --Basic Mayo
+  --Dill
+  --Chives`
+},
+{
+  id: 18,
+  name: `Egg Salad`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p508_i6_w3024.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient:`Oat Porridge
+  Famous Sauce
+  Little Gem Leaves
+  Salt & Pepper
+  Egg Salad
+  --Hard Boiled Eggs
+  --Salt
+  --Celery
+  --Basic Mayo
+  --Dill
+  --Chives`
+},
 ]
 
 export default App;
