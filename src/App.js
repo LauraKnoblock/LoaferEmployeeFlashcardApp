@@ -66,6 +66,7 @@ const SAMPLE_FLASHCARDS = [
       id: 1,
       name: `Light & Mild`,
       category: 'bread',
+      image: 'https://union-loafers-cafe-and-bread-bakery.square.site/product/light-mild/4',
       description:`This is a very traditional sourdough in the style of rustic French countryside bread`,
       ingredient: `Ingredients
       Transitional Whole Kernel wheat flour from The Mill at Janie’s Farm (for nutrition and flavor),
