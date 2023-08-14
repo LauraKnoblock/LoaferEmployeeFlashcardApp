@@ -1,9 +1,24 @@
 body {
   background-image: url(https://images.squarespace-cdn.com/content/v1/63c84a33e45e6c691d18e748/40951327-3961-492e-90ab-545d0f5614d9/Floor+Pattern.png?format=1000w);
-  color:rgb(39, 128, 230);
+  color:rgba(0, 101, 150, 0.9);
   margin: 0;
   font-family: 'Tahoma', sans-serif;
   text-align: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 101, 150, 0.9);
+  color:white;
+  margin:0;
+  padding: 1rem;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+}
+
+.header img {
+  margin-right:10px;
 }
 .container {
   max-width: 1400px;
@@ -73,6 +88,7 @@ body {
 
 select {
   padding: .5rem;
+  margin: 1.5rem;
   border-radius: 1rem;
   background-color: rgba(6, 74, 126, 0.838);
   border-color: ghostwhite;
