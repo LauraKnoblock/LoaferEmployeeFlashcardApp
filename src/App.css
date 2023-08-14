@@ -20,6 +20,8 @@ body {
 .header img {
   margin-right:10px;
 }
+
+
 .container {
   max-width: 1400px;
   margin: 2rem, 3rem;
@@ -72,7 +74,7 @@ body {
   left: 0;
 }
 
-.flashcard-options {
+/* .flashcard-options {
   margin-top: .5rem;
 }
 
@@ -84,15 +86,36 @@ body {
 
 .flashcard-option:first-child {
   margin-top: 0;
-}
+} */
 
 select {
   padding: .5rem;
-  margin: 1.5rem;
   border-radius: 1rem;
   background-color: rgba(6, 74, 126, 0.838);
   border-color: ghostwhite;
   color:ghostwhite;
   font-size: larger;
   font-family: 'Tahoma', sans-serif;
+  margin-top:2rem;
+  margin-bottom: 2rem;
 }
+
+.card .back ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.card .front img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.card .back img {
+  max-width: 100%;
+  height: auto;
+  margin-top:1rem;
+}
+

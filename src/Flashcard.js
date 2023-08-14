@@ -14,11 +14,15 @@ export default function Flashcard( { flashcard }) {
       setHeight(Math.max(frontHeight, backHeight, 100));
    }
 
-  useEffect(setMaxHeight, [flashcard.name, flashcard.description, flashcard.ingredient, flashcard.options]);
+  useEffect(setMaxHeight, [flashcard.name, flashcard.description, flashcard.ingredient, flashcard.image, flashcard.options]);
   useEffect(() => {
       window.addEventListener('resize', setMaxHeight)
       return () => window.removeEventListener('resize', setMaxHeight);
-  }, )
+  }, );
+  useEffect(() => {
+    window.addEventListener('resize', setMaxHeight);
+    return () => window.removeEventListener('resize', setMaxHeight);
+  }, []);
   return (
     <div 
       className={`card ${flip ? 'flip' : ''}`}
@@ -26,16 +30,23 @@ export default function Flashcard( { flashcard }) {
       onClick={() => setFlip(!flip)}>
       <div className="front" ref={frontEl}>
        <h3> {flashcard.name}</h3>
-       <img src={flashcard.image}></img>
         {flashcard.description}
+        <img src={flashcard.image}></img>
         <div className ="flashcard-options">
-          {flashcard.options.map(option => {
+          {/* {flashcard.options.map(option => {
             return <div className="flashcard-option">
               {option}</div>
-          })}
+          })} */}
         </div>
       </div>
-      <div className="back" ref={backEl}>{flashcard.ingredient}</div>
+      <div className="back" ref={backEl}>
+      <h4>Ingredients:</h4>
+  <ul>
+    {flashcard.ingredient.split('\n').map((ingredient, index) => (
+      <li key={index}>{ingredient}</li>
+    ))}
+  </ul>
+      </div>
         {/* {flip ? flashcard.answer : flashcard.question} */}
     </div>
     

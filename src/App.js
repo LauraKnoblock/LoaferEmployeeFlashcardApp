@@ -4,7 +4,7 @@ import axios from 'axios';
 import Flashcard from './Flashcard';
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('bread');
+  const [selectedCategory, setSelectedCategory] = useState('none');
   const [flashcards, setFlashcards] = useState([]);
 
   const categoryFlashcards = {
@@ -46,9 +46,13 @@ function App() {
   // }
   return (
     <div>
+      <div className="header">
+      <img src="https://images.squarespace-cdn.com/content/v1/59626a54e58c62cb702f966f/1550516597840-RQUDC10WZ33QFTLH6UAZ/Seal_blue.png?format=100w"/>
       <h1>Union Loafers Menu Knowledge</h1>
+      </div>
       <div>
         <select value={selectedCategory} onChange={handleCategoryChange}>
+        <option value="none" disabled>Select a category to study</option>
           <option value="bread">Bread</option>
           <option value="lunch">Lunch</option>
           <option value="pizza">Pizza</option>
@@ -66,7 +70,7 @@ const SAMPLE_FLASHCARDS = [
       id: 1,
       name: `Light & Mild`,
       category: 'bread',
-      image: 'https://union-loafers-cafe-and-bread-bakery.square.site/product/light-mild/4',
+      image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p4_i3_w1280.jpeg?dpr=1.25',
       description:`This is a very traditional sourdough in the style of rustic French countryside bread`,
       ingredient: `Ingredients
       Transitional Whole Kernel wheat flour from The Mill at Janie’s Farm (for nutrition and flavor),
@@ -82,6 +86,7 @@ const SAMPLE_FLASHCARDS = [
       id: 2,
       name: `Janie's Bread`,
       category: 'bread',
+      image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p232_i5_w2880.jpeg?width=1280&dpr=1.25',
       description: `This bread is made with a local Whole Wheat that is stone-milled fresh for us in Ashkum, IL`,
       ingredient: `Transitional Whole Kernel wheat flour from The Mill at Janie's Farm (for nutrition and flavor)
       Dark rye flour from Janies 
@@ -104,9 +109,7 @@ const SAMPLE_FLASHCARDS = [
     Sugar
     Instant yeast
     Salt
-    Soy oil
-    
-    `,
+    Soy oil`,
     options: [
         // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
     ]
@@ -115,15 +118,14 @@ const SAMPLE_FLASHCARDS = [
   id: 4,
   name: `Semolina`,
   category: 'bread',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p50_i4_w2048.jpeg?width=1280&dpr=1.25',
   description: `This is our take on a classic Italian table bread. The sesame seeds give the bread a warm nutty flavor, while the oil gives the crumb a silky smooth texture.`,
   ingredient: `Sifted Wheat
   Whole Durum Wheat
   Soy Oil
   Water
   Salt
-  Sesame Seeds
-  
-  `,
+  Sesame Seeds`,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
@@ -139,9 +141,7 @@ const SAMPLE_FLASHCARDS = [
   Molasses
   Cocoa Noir
   Carraway
-  Salt
-  
-  `,
+  Salt`,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
@@ -156,8 +156,7 @@ const SAMPLE_FLASHCARDS = [
   Rye
   Water
   Salt
-  Yeast
-  `,
+  Yeast`,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
@@ -174,8 +173,7 @@ const SAMPLE_FLASHCARDS = [
   Millet
   Pumpkin Seed
   Sunflower Seed
-  Sesame Seed
-  `,
+  Sesame Seed`,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
@@ -192,8 +190,7 @@ const SAMPLE_FLASHCARDS = [
   Yeast
   White Cheddar
   Breadcrumbs
-  Olive oil
-  `,
+  Olive oil `,
   options: [
       // 'Answer', 'Answer 1', 'Answer 2', 'Answer 3',
   ]
