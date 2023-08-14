@@ -14,6 +14,7 @@ function App() {
     snacksSides: SAMPLE_FLASHCARDS.filter(card => card.category === 'snacksSides'),
     sauces: SAMPLE_FLASHCARDS.filter(card => card.category === 'sauces'),
     pizza: SAMPLE_FLASHCARDS.filter(card => card.category === 'pizza'),
+    dinnerStarters: SAMPLE_FLASHCARDS.filter(card => card.category === 'dinnerStarters'),
   };
 
   const handleCategoryChange = (event) => {
@@ -33,7 +34,7 @@ function App() {
         <option value="none" disabled>Select a category</option>
           <option value="bread">Bread</option>
           <option value="sandwiches">Sandwiches</option>
-          <option value="lunchSoupSalad">Lunch: Soup & Salad</option>
+          <option value="lunchSoupSalad">Soup & Salad</option>
           <option value='snacksSides'>Snacks & Sides</option>
           <option value='sauces'>Sauces</option>
           <option value="pizza">Pizza</option>
@@ -145,7 +146,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 8,
   name: `Cheesy Bread`,
-  category: 'bread',
+  category: 'snacksSides',
   image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p296_i4_w2048.jpeg?width=1280&dpr=1.25',
   description: `This focaccia dough is baked with a sharp white cheddar cheese and topped with breadcrumbs.`,
   ingredient: `High Gluten Wheat
@@ -160,7 +161,7 @@ const SAMPLE_FLASHCARDS = [
 {
   id: 9,
   name: `Pizza Rossa`,
-  category: 'bread',
+  category: 'snacksSides',
   image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p305_i5_w2048.jpeg?width=1280&dpr=1.250',
   description: `This focaccia dough has a spicy salty tomato topping.`,
   ingredient: `High Gluten Wheat
@@ -308,22 +309,126 @@ const SAMPLE_FLASHCARDS = [
   --Chives`
 },
 {
-  id: 18,
-  name: `Egg Salad`,
+  id: 19,
+  name: `Bacon Turkey Bianca`,
   category: 'sandwiches',
-  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p508_i6_w3024.jpeg?width=1280&dpr=1.25',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p364_i4_w1671.jpeg?width=1280&dpr=1.25',
   description: ``,
-  ingredient:`Oat Porridge
-  Famous Sauce
+  ingredient:`Bianca
+  Roasted Tomato Mayo
   Little Gem Leaves
+  Turkey Breast
   Salt & Pepper
-  Egg Salad
-  --Hard Boiled Eggs
-  --Salt
-  --Celery
-  --Basic Mayo
-  --Dill
-  --Chives`
+  Neuskes Bacon`
+},
+{
+  id: 20,
+  name: `Toscano`,
+  category: 'sandwiches',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p316_i3_w2048.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient:`Bianca
+  Basic Mayo
+  Pickled Banana Peppers
+  Salami
+  Pecorino Toscano`
+},
+{
+  id: 21,
+  name: `Curry Corn and Potato Soup`,
+  category: 'lunchSoupSalad',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p603_i3_w3024.jpeg?width=1280&dpr=1.25',
+  description: `Vegan`,
+  ingredient:`--Base
+  Corn & Corn Stock
+  Water
+  Russet Potatoes
+  Yellow Onion
+  Garlic
+  Salt
+  Ginger
+  Coconut Milk
+  Curry Powder
+  Turmeric
+  Cumin
+  Coriander
+  Paprika
+  Soy oil
+  --Charred Corn and Poblano Relish
+  Poblano Peppers
+  Lime Juice and Zest
+  Ginger
+  Corn`
+},
+{
+  id: 22,
+  name: `Basic Mayo`,
+  category: 'sauces',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p536_i1_w3600.jpeg?width=1280&dpr=1.25',
+  description: ``,
+  ingredient:`Egg Yolk
+  White Distilled Vinegar
+  Salt
+  Soy Oil`
+},
+{
+  id: 23,
+  name: `Bistro Sauce`,
+  category: 'sauces',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p537_i1_w3600.jpeg?width=1280&dpr=1.25',
+  description: `Bistro sauce is a mustard and horseradish sauce. Unlike many Horseradish sauces, Bistro sauce is an emulsification instead of a mixture. This allows for a consistently thick sauce.`,
+  ingredient:`Garlic
+  Horseradish
+  Grainy Mustard
+  Egg Yolk
+  White Distilled Vinegar
+  Salt
+  Soy Oil`
+},
+{
+  id: 24,
+  name: `Marinara`,
+  category: 'pizza',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p110_i1_w2048.jpeg?width=1280&dpr=1.25',
+  description: `The Marinara is our only vegan option for pizza. It is a spicy, garlicky, herbal pizza emphasizing the brightness of the tomato sauce and the foral heat of the chili oil.`,
+  ingredient:`Pizza Sauce
+  Oregano
+  Basil
+  Maldon Sea Salt
+  Chopped Calabrian Chili's
+  Garlic Slices
+  Garlic oil`
+},
+{
+  id: 25,
+  name: `Pepperoni`,
+  category: 'pizza',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p148_i1_w2048.jpeg?width=1280&dpr=1.25',
+  description: `We take a classic Pepperoni and brighten it up with the fruity heat of Calabrian Chilis.`,
+  ingredient:`Pizza Sauce
+  Shredded Mozarella
+  Oregano
+  Basil
+  Ezzo Pepperoni
+  Calabrian Chilis
+  Grana Padano
+  Fresh Mozarella`
+},
+{
+  id: 26,
+  name: `Caeser Salad`,
+  category: 'dinnerStarters',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p174_i1_w3024.jpeg?width=1280&dpr=1.25',
+  description: `We take a classic Pepperoni and brighten it up with the fruity heat of Calabrian Chilis.`,
+  ingredient:`Romaine
+  Little Gem Lettuce
+  Salt Pepper
+  Anchovy
+  Capers
+  Chili Flake
+  Bread Crumbs
+  Grana Padano
+  Caesar Dressing`
 },
 ]
 
