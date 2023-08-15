@@ -120,7 +120,7 @@ const SAMPLE_FLASHCARDS = [
   name: `Demi-Baguette`,
   category: 'bread',
   image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p758_i2_w4032.jpeg?width=1280&dpr=1.25',
-  description: `This is the classic French bread. This bread offers a crispy crust with a soft pillowy interior.`,
+  description: `This is the classic French bread. This bread offers a crispy crust with a soft pillowy interior. *AVAILABLE AFTER 3PM*`,
   ingredient: `Sifted Wheat
   Whole Wheat
   Rye
@@ -429,6 +429,51 @@ const SAMPLE_FLASHCARDS = [
   Bread Crumbs
   Grana Padano
   Caesar Dressing`
+},
+{
+  id: 26,
+  name: `Caeser Salad`,
+  category: 'dinnerStarters',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p174_i1_w3024.jpeg?width=1280&dpr=1.25',
+  description: `We take a classic Pepperoni and brighten it up with the fruity heat of Calabrian Chilis.`,
+  ingredient:`Romaine
+  Little Gem Lettuce
+  Salt Pepper
+  Anchovy
+  Capers
+  Chili Flake
+  Bread Crumbs
+  Grana Padano
+  Caesar Dressing`
+},
+{
+  id: 27,
+  name: `Pretzel`,
+  category: 'snacksSides',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p206_i4_w2048.jpeg?width=1280&dpr=1.25',
+  description: `Naturally leavened pretzel with your choice of house mustard or whipped & salted butter.`,
+  ingredient:`Sifted Wheat
+  Malted Barley
+  Butter
+  Salt
+  Water
+  Dipped in Lye`
+},
+{
+  id: 27,
+  name: `Chocolate Chip Cookie`,
+  category: 'snacksSides',
+  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p386_i2_w2184.jpeg?width=1280&dpr=1.25',
+  description: `These are classic, Grandma Style cookies. Firm on the outside and softer towards the center.`,
+  ingredient:`Sifted Wheat
+  Egg
+  Butter
+  Brown Sugar
+  White Sugar
+  Salt
+  Baking Soda
+  Baking Powder
+  Chocolate Chips`
 },
 ]
 
