@@ -430,22 +430,7 @@ const SAMPLE_FLASHCARDS = [
   Grana Padano
   Caesar Dressing`
 },
-{
-  id: 26,
-  name: `Caeser Salad`,
-  category: 'dinnerStarters',
-  image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p174_i1_w3024.jpeg?width=1280&dpr=1.25',
-  description: `We take a classic Pepperoni and brighten it up with the fruity heat of Calabrian Chilis.`,
-  ingredient:`Romaine
-  Little Gem Lettuce
-  Salt Pepper
-  Anchovy
-  Capers
-  Chili Flake
-  Bread Crumbs
-  Grana Padano
-  Caesar Dressing`
-},
+
 {
   id: 27,
   name: `Pretzel`,
@@ -474,6 +459,61 @@ const SAMPLE_FLASHCARDS = [
   Baking Soda
   Baking Powder
   Chocolate Chips`
+},
+{
+  id: 28,
+  name: `The Bear`,
+  category: 'sandwiches',
+  image: 'https://d1w7312wesee68.cloudfront.net/Ic9oaHJg62pUbA-31qAQpcWTR7dYqZHmUU0XjBP5SAg/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/40122e1b-a444-414b-9f6e-111ffab1e316.jpg',
+  description: `Giardiniera, parmesan mayo, banana peppers, vinaigrette.`,
+  ingredient:`Roast Beef
+  Giardiniera
+  parmesan mayo
+  banana peppers
+  vinaigrette`
+},
+{
+  id: 29,
+  name: `Little Gem Salad`,
+  category: 'lunchSoupSalad',
+  image: 'https://d1w7312wesee68.cloudfront.net/GsxMY3_01rutp669tRD0amyGi6etR0N2CIAKwMkUkSg/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/b9ac8e6b-82e7-4c6e-9ae4-f8634261eba3.jpg',
+  ingredient:`Little Gem Lettuce
+  Romaine
+  Salt
+  Pepper
+  Buttermilk Dressing
+  Pickled Shallots
+  Herbs-
+  Chervil
+  Parsley
+  Chives
+  Dill`
+},
+{
+ id: 30,
+  name: `Pretzel`,
+  category: 'snacksSides',
+  image: 'https://d1w7312wesee68.cloudfront.net/uk0Sc3EMJLd2-b__Kk0jLQzHckhzgkkELJEDd2_We9I/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/2c20273b-1285-49e7-a991-c842fa35987a.jpg',
+  ingredient: `Sifted Wheat
+  Malted Barley
+  Butter
+  Salt
+  Water
+  Dipped in Lye`,
+},
+{  id: 31,
+  name: `Giardiniera`,
+  category: 'snacksSides',
+  image: 'https://d1w7312wesee68.cloudfront.net/PRnMAUo7iaTJO-5z8hDZZfyx7ycMHxrT4joHE7SUEjg/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/f7336dd4-5d57-4486-95ff-7d3c662f2dcb.jpg',
+  ingredient: `Serrano Peppers
+  Celery
+  Carrot
+  Cauliflower
+  Water
+  White Distilled Vinegar
+  Salt
+  Soy Oil
+  Olive Oil`,
 },
 ]
 
