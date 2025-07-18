@@ -447,7 +447,7 @@ const SAMPLE_FLASHCARDS = [
   Dipped in Lye`
 },
 {
-  id: 27,
+  id: 28,
   name: `Chocolate Chip Cookie`,
   category: 'snacksSides',
   image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p386_i2_w2184.jpeg?width=1280&dpr=1.25',
@@ -463,7 +463,7 @@ const SAMPLE_FLASHCARDS = [
   Chocolate Chips`
 },
 {
-  id: 28,
+  id: 29,
   name: `The Bear`,
   category: 'sandwiches',
   image: 'https://d1w7312wesee68.cloudfront.net/Ic9oaHJg62pUbA-31qAQpcWTR7dYqZHmUU0XjBP5SAg/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/40122e1b-a444-414b-9f6e-111ffab1e316.jpg',
@@ -475,7 +475,7 @@ const SAMPLE_FLASHCARDS = [
   vinaigrette`
 },
 {
-  id: 29,
+  id: 30,
   name: `Little Gem Salad`,
   category: 'lunchSoupSalad',
   image: 'https://d1w7312wesee68.cloudfront.net/GsxMY3_01rutp669tRD0amyGi6etR0N2CIAKwMkUkSg/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/b9ac8e6b-82e7-4c6e-9ae4-f8634261eba3.jpg',
@@ -491,18 +491,7 @@ const SAMPLE_FLASHCARDS = [
   Chives
   Dill`
 },
-{
- id: 30,
-  name: `Pretzel`,
-  category: 'snacksSides',
-  image: 'https://d1w7312wesee68.cloudfront.net/uk0Sc3EMJLd2-b__Kk0jLQzHckhzgkkELJEDd2_We9I/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/e0fb2687-939e-49d9-95e8-841142c1ef3c/MenuItem/2c20273b-1285-49e7-a991-c842fa35987a.jpg',
-  ingredient: `Sifted Wheat
-  Malted Barley
-  Butter
-  Salt
-  Water
-  Dipped in Lye`,
-},
+
 {  id: 31,
   name: `Giardiniera`,
   category: 'snacksSides',
@@ -516,6 +505,18 @@ const SAMPLE_FLASHCARDS = [
   Salt
   Soy Oil
   Olive Oil`,
+},
+{  id: 33,
+  name: `Garlic Mayo`,
+  category: 'sauces',
+  image: '',
+  description: 'Garlic Mayo is an adaptation on Basic Mayo that provides a rich garlic flavor.'
+  ingredient: `Egg Yolk
+White Distilled Vinegar
+Salt
+Garlic
+Soy Oil
+`,
 },
 ]
 
