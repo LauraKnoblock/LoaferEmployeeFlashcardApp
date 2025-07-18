@@ -1,15 +1,10 @@
 {
   "files": {
-    "main.css": "/LoaferEmployeeFlashcardApp/static/css/main.3812ed3d.css",
-    "main.js": "/LoaferEmployeeFlashcardApp/static/js/main.554dec7c.js",
-    "static/js/787.5d1e09b3.chunk.js": "/LoaferEmployeeFlashcardApp/static/js/787.5d1e09b3.chunk.js",
+    "main.js": "/LoaferEmployeeFlashcardApp/static/js/main.1db1be1a.js",
     "index.html": "/LoaferEmployeeFlashcardApp/index.html",
-    "main.3812ed3d.css.map": "/LoaferEmployeeFlashcardApp/static/css/main.3812ed3d.css.map",
-    "main.554dec7c.js.map": "/LoaferEmployeeFlashcardApp/static/js/main.554dec7c.js.map",
-    "787.5d1e09b3.chunk.js.map": "/LoaferEmployeeFlashcardApp/static/js/787.5d1e09b3.chunk.js.map"
+    "main.1db1be1a.js.map": "/LoaferEmployeeFlashcardApp/static/js/main.1db1be1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3812ed3d.css",
-    "static/js/main.554dec7c.js"
+    "static/js/main.1db1be1a.js"
   ]
 }

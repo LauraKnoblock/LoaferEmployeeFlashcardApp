@@ -5,8 +5,7 @@ import Flashcard from './Flashcard';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('none');
-  const [flashcards, setFlashcards] = useState([]);
-
+const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
   const categoryFlashcards = {
     bread: SAMPLE_FLASHCARDS.filter(card => card.category === 'bread'),
     sandwiches: SAMPLE_FLASHCARDS.filter(card => card.category === 'sandwiches'),
@@ -17,13 +16,13 @@ function App() {
     dinnerStarters: SAMPLE_FLASHCARDS.filter(card => card.category === 'dinnerStarters'),
   };
 
-  const handleCategoryChange = (event) => {
-    const newCategory = event.target.value;
-    setSelectedCategory(newCategory);
-    setFlashcards(categoryFlashcards[newCategory]);
-  };
+const handleCategoryChange = (event) => {
+  const newCategory = event.target.value; // get selected value from the event
+  setSelectedCategory(newCategory);
+  setFlashcards(categoryFlashcards[newCategory]);
   console.log("Category selected:", newCategory);
-    console.log("Flashcards set to:", categoryFlashcards[newCategory]);
+  console.log("Flashcards set to:", categoryFlashcards[newCategory]);
+};
 
   return (
     <div>
