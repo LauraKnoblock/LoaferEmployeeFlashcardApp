@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import FlashcardList from './FlashcardList';
 import axios from 'axios';
 import Flashcard from './Flashcard';
+import './App.css';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('none');
