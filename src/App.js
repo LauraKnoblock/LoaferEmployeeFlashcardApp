@@ -510,7 +510,7 @@ const SAMPLE_FLASHCARDS = [
   name: `Garlic Mayo`,
   category: 'sauces',
   image: '',
-  description: 'Garlic Mayo is an adaptation on Basic Mayo that provides a rich garlic flavor.'
+  description: 'Garlic Mayo is an adaptation on Basic Mayo that provides a rich garlic flavor.',
   ingredient: `Egg Yolk
 White Distilled Vinegar
 Salt
