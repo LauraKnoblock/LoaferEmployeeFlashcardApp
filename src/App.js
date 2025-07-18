@@ -22,6 +22,8 @@ function App() {
     setSelectedCategory(newCategory);
     setFlashcards(categoryFlashcards[newCategory]);
   };
+  console.log("Category selected:", newCategory);
+    console.log("Flashcards set to:", categoryFlashcards[newCategory]);
 
   return (
     <div>
