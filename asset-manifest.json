@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/LoaferEmployeeFlashcardApp/static/css/main.9d39d758.css",
-    "main.js": "/LoaferEmployeeFlashcardApp/static/js/main.25667e6d.js",
+    "main.js": "/LoaferEmployeeFlashcardApp/static/js/main.d98b1a57.js",
     "index.html": "/LoaferEmployeeFlashcardApp/index.html",
     "main.9d39d758.css.map": "/LoaferEmployeeFlashcardApp/static/css/main.9d39d758.css.map",
-    "main.25667e6d.js.map": "/LoaferEmployeeFlashcardApp/static/js/main.25667e6d.js.map"
+    "main.d98b1a57.js.map": "/LoaferEmployeeFlashcardApp/static/js/main.d98b1a57.js.map"
   },
   "entrypoints": [
     "static/css/main.9d39d758.css",
-    "static/js/main.25667e6d.js"
+    "static/js/main.d98b1a57.js"
   ]
 }
