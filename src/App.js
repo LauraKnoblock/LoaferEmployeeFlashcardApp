@@ -6,7 +6,9 @@ import './App.css';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('none');
-const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
+  const [searchTerm, setSearchTerm] = useState('');  // <-- new state for search input
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
+
   const categoryFlashcards = {
     bread: SAMPLE_FLASHCARDS.filter(card => card.category === 'bread'),
     sandwiches: SAMPLE_FLASHCARDS.filter(card => card.category === 'sandwiches'),
@@ -17,13 +19,30 @@ const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS);
     dinnerStarters: SAMPLE_FLASHCARDS.filter(card => card.category === 'dinnerStarters'),
   };
 
-const handleCategoryChange = (event) => {
-  const newCategory = event.target.value; // get selected value from the event
-  setSelectedCategory(newCategory);
-  setFlashcards(categoryFlashcards[newCategory]);
-  console.log("Category selected:", newCategory);
-  console.log("Flashcards set to:", categoryFlashcards[newCategory]);
-};
+  // Handle category change
+  const handleCategoryChange = (event) => {
+    const newCategory = event.target.value;
+    setSelectedCategory(newCategory);
+    setSearchTerm(''); // reset search when category changes
+    setFlashcards(categoryFlashcards[newCategory]);
+    console.log("Category selected:", newCategory);
+    console.log("Flashcards set to:", categoryFlashcards[newCategory]);
+  };
+
+  // Handle search input change
+  const handleSearchChange = (event) => {
+    const term = event.target.value;
+    setSearchTerm(term);
+
+    // Filter flashcards by both category and ingredient
+    const baseCards = selectedCategory === 'none' ? SAMPLE_FLASHCARDS : categoryFlashcards[selectedCategory];
+
+    const filteredCards = baseCards.filter(card =>
+      card.ingredient.toLowerCase().includes(term.toLowerCase())
+    );
+
+    setFlashcards(filteredCards);
+  };
 
   return (
     <div>
@@ -43,6 +62,16 @@ const handleCategoryChange = (event) => {
           <option value = "dinnerStarters">Dinner Starters</option>
         </select>
       </div>
+
+      <div>
+  <input
+    type="text"
+    placeholder="Search by ingredient..."
+    value={searchTerm}
+    onChange={handleSearchChange}
+    style={{ marginTop: '10px', padding: '5px', width: '300px' }}
+  />
+</div>
       <div className="container">
         <FlashcardList flashcards={flashcards} />
       </div>
