@@ -535,7 +535,8 @@ const SAMPLE_FLASHCARDS = [
   Soy Oil
   Olive Oil`,
 },
-{  id: 33,
+
+{  id: 32,
   name: `Garlic Mayo`,
   category: 'sauces',
   image: '',
@@ -544,6 +545,68 @@ const SAMPLE_FLASHCARDS = [
 White Distilled Vinegar
 Salt
 Garlic
+Soy Oil
+`},
+
+{  id: 33,
+  name: `Buttermilk Dressing`,
+  category: 'sauces',
+  image: '',
+  description: 'The Buttermilk Dressing is a lighter version of a Ranch Dressing.',
+  ingredient: `Egg Yolk
+Buttermilk
+Shallot
+Sour Cream
+Garlic
+Lemon Juice
+Salt
+Soy Oil
+`,
+},
+
+{  id: 34,
+  name: `Grainy Mustard`,
+  category: 'sauces',
+  image: '',
+  description: 'Grainy Mustard is a traditional semi-ground mustard providing texture and sharpness.',
+  ingredient: `Brown Mustard Seed
+Yellow Mustard Seed
+Champagne Vinegar
+White Distilled Vinegar
+Beer
+Salt
+`,
+},
+
+{  id: 35,
+  name: `100k Island Dressing`,
+  category: 'sauces',
+  image: '',
+  description: '100k Island is a slightly brighter version of 1,000 Island, with Hard Boiled Eggs diced in and a little kick with sriracha added.',
+  ingredient: `Egg Yolk
+Shallot
+Garlic
+Bread & Butter Pickles
+Ketchup
+Sriracha
+Salt
+Black Pepper
+Soy Oil
+Hard Boiled Eggs
+`,
+},
+
+{  id: 36,
+  name: `Bistro Sauce`,
+  category: 'sauces',
+  image: '',
+  description: 'Bistro is a mustard and horseradish sauce. Unlike many Horseradish sauces, Bistro sauce is an emulsification instead of a mixture. This allows for a consistently thick sauce.',
+  ingredient: `Garlic
+Horseradish
+Grainy Mustard
+Egg Yolk
+White Distilled Vinegar
+Salt
 Soy Oil
 `,
 },
