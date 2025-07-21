@@ -1,133 +1,156 @@
 body {
   background-image: url(https://images.squarespace-cdn.com/content/v1/63c84a33e45e6c691d18e748/40951327-3961-492e-90ab-545d0f5614d9/Floor+Pattern.png?format=1000w);
-  color:rgba(0, 101, 150, 0.9);
+  color: rgba(0, 101, 150, 0.9);
   margin: 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
   font-size: 40px;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 100, 150, 0.87);
-  color:white;
-  margin:0;
+  color: white;
+  margin: 0, auto;
   padding: 1rem;
-  font-family: 'Poppins', sans-serif;
+  max-width: 1400px;
   text-align: center;
 }
 
 .header img {
-  margin-right:10px;
+  margin-right: 10px;
 }
-
 
 .container {
-  max-width: 1400px;
-  margin: 2rem, 3rem;
+  max-width: 1400px;  /* or whatever max width you want */
+  margin: 0 auto;     /* centers container horizontally */
+  padding: 0 1rem;    /* small horizontal padding so content doesn't touch edges */
+  box-sizing: border-box;
 }
+
 .card-grid {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  
 }
+
+/* ---------- CARD STYLING ---------- */
+
 .card {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  border-radius: .50rem;
+  width: 200px;
+  height: 250px;
+  perspective: 1000px;
   margin: 1rem;
-  box-shadow: 0 0 5px 2px rgba(170, 201, 212, 0.558);
-  background-image: url("https://www.frenchpaper.com/cdn/shop/products/KRAFT-TONE_Index_Off-White_Kraft_100C_01_1800x1800.jpg?v=1624629595");
-  height: 150px;
-  width: 150px;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
-  transform-style: preserve-3d;
-  transition: 150ms;
   cursor: pointer;
-  font-size: 12px;
-  padding: 1rem;
 }
 
-.card:hover {
-  --translate-y: -2px;
-  box-shadow: 0 0 10px 5px rgb(6, 74, 126, 0.638);
-}
-.card.flip {
-  --rotate-y: 180deg;
-}
-.card .front,
-.card .back {
-  position: absolute;
-  padding: 1rem;
-  backface-visibility: hidden;
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: 0.5rem;
 }
 
-.card .back {
+.card.flip .card-inner {
   transform: rotateY(180deg);
 }
 
-.card .front {
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  background-image: url("https://www.frenchpaper.com/cdn/shop/products/KRAFT-TONE_Index_Off-White_Kraft_100C_01_1800x1800.jpg?v=1624629595");
+  box-shadow: 0 0 5px 2px rgba(170, 201, 212, 0.558);
+  top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-/* .flashcard-options {
-  margin-top: .5rem;
+.back {
+  transform: rotateY(180deg);
 }
 
-.flashcard-option {
-  margin-top: .25rem;
-  color: rgba(0, 101, 141, 0.9);
-  font-size: .70rem;
+.card-image {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.flashcard-option:first-child {
-  margin-top: 0;
-} */
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
 
-select {
-  padding: .5rem;
-  border-radius: 1rem;
-  background-color: rgba(6, 74, 126, 0.838);
-  border-color: ghostwhite;
-  color:ghostwhite;
-  font-size: larger;
-  font-family: 'Poppins', sans-serif;
-  margin-top:2rem;
-  margin-bottom: 2rem;
+.card-content {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ---------- FLASHCARD CONTENT ---------- */
+
+.card h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.card .back p {
+  margin: 0.5rem 0;
+  text-align: left;
 }
 
 .card .back ul {
   list-style-type: disc;
   padding-left: 1.5em;
-  margin-top: 0.5em;
   text-align: left;
 }
 
 .card .back li {
   margin-bottom: 0.25em;
-  justify-content: left;
+}
+.card p {
+  font-size: 0.8rem; /* or try 0.8rem if still too big */
 }
 
-.card .front img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 1rem;
-}
 
-.card .back img {
-  max-width: 100%;
-  height: auto;
-  margin-top:1rem;
-}
+/* ---------- SELECT DROPDOWN ---------- */
 
-.card .h3 {
-  margin-top: -1rem;
+select {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(6, 74, 126, 0.838);
+  border-color: ghostwhite;
+  color: ghostwhite;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
