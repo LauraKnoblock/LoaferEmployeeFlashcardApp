@@ -11,16 +11,26 @@ h1 {
   font-size: 40px;
 }
 
+input {
+  border-radius: 10px;
+
+}
+
 .header {
+  width: 100%;
+  background-color: rgba(0, 100, 150, 0.87);
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 100, 150, 0.87);
-  color: white;
-  margin: 0, auto;
-  padding: 1rem;
-  max-width: 1400px;
-  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .header img {
@@ -149,8 +159,12 @@ select {
   margin: 2rem auto;
   display: block;
 }
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }

@@ -47,8 +47,10 @@ function App() {
   return (
     <div>
       <div className="header">
+        <div class="header-content">
       <img src="https://images.squarespace-cdn.com/content/v1/59626a54e58c62cb702f966f/1550516597840-RQUDC10WZ33QFTLH6UAZ/Seal_blue.png?format=100w"/>
       <h1>Union Loafers Menu Guide</h1>
+      </div>
       </div>
       <div>
         <select value={selectedCategory} onChange={handleCategoryChange}>
@@ -447,7 +449,7 @@ const SAMPLE_FLASHCARDS = [
 },
 {
   id: 26,
-  name: `Caeser Salad`,
+  name: `Caesar Salad`,
   category: 'dinnerStarters',
   image: 'https://129144036.cdn6.editmysite.com/uploads/1/2/9/1/129144036/s642576876884555124_p174_i1_w3024.jpeg?width=1280&dpr=1.25',
   description: `We take a classic Pepperoni and brighten it up with the fruity heat of Calabrian Chilis.`,
